@@ -1,11 +1,20 @@
 using Microsoft.AspNetCore.Mvc;
-using RACEDAY_NEW.Models;
+using RaceDayy.Models;
 using System.Diagnostics;
 
-namespace RACEDAY_NEW.Controllers
+namespace RaceDayy.Controllers
 {
     public class HomeController : Controller
     {
+        public IActionResult AdminDashboard()
+        {
+            return View();
+        }
+
+        public IActionResult OrganiserDashboard()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();
